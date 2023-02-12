@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Star-themed Checkout</title>
+<style>
+body {
+background-color: black;
+}
+
+.container {
+max-width: 600px;
+margin: auto;
+text-align: center;
+padding: 50px;
+color: white;
+}
+
+h1 {
+font-size: 3em;
+color: #ffd700;
+}
+
+.form-group {
+margin: 20px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.form-control {
+width: 100%;
+padding: 10px;
+font-size: 1.2em;
+border: none;
+border-radius: 5px;
+box-shadow: 0 0 10px #ffffff;
+}
+
+.btn-checkout {
+background-color: #ffd700;
+color: black;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 1.2em;
+cursor: pointer;
+box-shadow: 0 0 10px #ffffff;
+}
+
+.btn-checkout:hover {
+background-color: white;
+color: #ffd700;
+}
+
+.stars {
+background-image: url(‘./stars.png’);
+background-repeat: repeat;
+background-size: cover;
+height: 300px;
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+}
+</style>
+</head>
+<body>
+<div class=”container”>
+<h1>Star-themed Checkout</h1>
+<form>
+<div class=”form-group”>
+<label for=”name”>Name</label>
+<input type=”text” class=”form-control” id=”name” placeholder=”Enter your name”>
+</div>
+<div class=”form-group”>
+<label for=”email”>Email</label>
+<input type=”email” class=”form-control” id=”email” placeholder=”Enter your email”>
+</div>
+<div class=”form-group”>
+<label for=”address”>Address</label>
+<input type=”text” class=”form-control” id=”address” placeholder=”Enter your address”>
+</div>
+<div class=”form-group”>
+<button class=”btn-checkout”>Checkout</button>
+</div>
+</form>
+</div>
+<div class=”stars”></div>
+</body>
+</html>
+
